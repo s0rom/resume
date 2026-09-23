@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Bohdan</title>
+    <link rel="icon" type="image/svg+xml" href="title_icon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-scheme="neutral" data-style="glass" data-mode="system">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar ui-panel">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+            </div>
+
+            <!-- SETTINGS MENU -->
+            <div class="settings-wrapper">
+                <button id="menu-btn" class="dots-btn" aria-label="Settings">⋮</button>
+                <div id="settings-menu" class="settings-menu ui-panel hidden">
+                    
+                    <div class="menu-section">
+                        <label for="scheme-select" class="menu-title">Color Scheme</label>
+                        <select id="scheme-select" class="custom-select">
+                            <option value="neutral">Neutral</option>
+                            <option value="catppuccin">Catppuccin</option>
+                            <option value="tinted-blue">Tinted Blue</option>
+                            <option value="terminal">Terminal</option>
+                            <option value="gruvbox">Gruvbox</option>
+                        </select>
+                    </div>
+
+                    <div class="menu-divider"></div>
+
+                    <div class="menu-section">
+                        <label for="style-select" class="menu-title">Visual Style</label>
+                        <select id="style-select" class="custom-select">
+                            <option value="none">Flat</option>
+                            <option value="transparent">Transparent</option>
+                            <option value="glass">Glass</option>
+                            <option value="blur">Blur</option>
+                        </select>
+                    </div>
+
+                    <div class="menu-divider"></div>
+
+                    <div class="menu-section">
+                        <span class="menu-title">Mode</span>
+                        <div class="mode-options">
+                            <button class="mode-btn active" data-set-mode="light">Light</button>
+                            <button class="mode-btn" data-set-mode="dark">Dark</button>
+                            <button class="mode-btn" data-set-mode="system">System</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <main class="container ui-panel">
+        
+        <!-- PROFILE HEADER -->
+        <header class="profile-header">
+            <img src="profile.png" alt="Profile Picture" class="profile-picture">
+            <div class="profile-info">
+                <h1>Bohdan Chopko</h1>
+                <p class="contact-info">19 years old • Based in Ukraine</p>
+                <p class="contact-info">Email: Bohdan.Chopko@proton.me</p>
+                <div class="profile-actions">
+                    <a href="mailto:Bohdan.Chopko@proton.me">
+                        <button class="contact-button">Contact Me</button>
+                    </a>
+                    <a href="files/Sorom_CV.pdf" download="Sorom_CV.pdf">
+                        <button class="contact-button">Download CV</button>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills section">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> JavaScript, TypeScript, Python, Bash </li>
+                <li><strong>Web Development:</strong> HTML5, CSS3, Node.js, REST API, Async JavaScript </li>
+                <li><strong>Databases & Tools:</strong> MySQL, SSMS, PostgreSQL </li>
+                <li><strong>Operating Systems & Linux:</strong> NixOS, Ubuntu, Arch Linux, Shell Scripting, System Administration </li>
+                <li><strong>Design & UI/UX:</strong> Figma</li>
+            </ul>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="education section">
+            <h2>Education</h2>
+            
+            <h3>Lviv Polytechnic National University</h3>
+            <p class="meta-info">Completed 3 years of study in Computer Science (Specialty 122)</p>
+
+            <h3 class="education-subheading">IT College (Ukraine)</h3>
+            <p class="meta-info">Transferred to continue education in Computer Science (Specialty 122)</p>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="experience section">
+            <h2>Experience</h2>
+            <p class="no-experience">None (Open to opportunities, internships and open-source projects)</p>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- WEBFETCH -->
+                <div class="project-card ui-panel">
+                    <div class="project-preview">
+                        <img src="webfetch-preview.png" alt="WebFetch Preview">
+                    </div>
+                    <div class="project-header">
+                        <h3>WebFetch</h3>
+                        <a href="https://s0rom.github.io/webfetch/" target="_blank" class="project-link">GitHub ↗</a>
+                        <a href="https://github.io//webfetch" target="_blank" class="project-link">site ↗</a>
+                    </div>
+                    <p class="project-tech">JavaScript / CSS / HTML</p>
+                    <p class="project-desc">A browser-based system monitor inspired by neofetch. Features dynamic hardware detection and custom UI themes.</p>
+                </div>
+                
+                <!-- TODOTUI -->
+                <div class="project-card ui-panel">
+                    <div class="project-preview">
+                        <img src="todotui-preview.png" alt="TODOTUI Preview">
+                    </div>
+                    <div class="project-header">
+                        <h3>TODOTUI</h3>
+                        <a href="https://github.com/s0rom/todotui" target="_blank" class="project-link">GitHub ↗</a>
+                    </div>
+                    <p class="project-tech">c++ [AI]</p>
+                    <p class="project-desc">A lightweight, customizable Terminal User Interface (TUI) task manager with themes and config options.</p>
+                </div>
+
+                <!-- LISTME -->
+                <div class="project-card ui-panel">
+                    <div class="project-header">
+                        <h3>ListMe <span class="project-status">[In Development]</span></h3>
+                        <a href="https://github.com/s0rom/listme" target="_blank" class="project-link">GitHub ↗</a>
+                    </div>
+                    <p class="project-tech">Web Development / API Integration</p>
+                    <p class="project-desc">A web platform to track, rate, and share anime, movies, and TV shows with friends. Features release updates, notifications for new episodes, and user matching based on shared tastes.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="mailto:Bohdan.Chopko@proton.me">Bohdan.Chopko@proton.me</a>
+                    <span class="separator">•</span>
+                    <a href="https://github.com/s0rom" target="_blank">github.com/s0rom</a>
+                </div>
+                <p class="footer-copy">Built with HTML & JavaScript by Bohdan Chopko 2026</p>
+            </div>
+        </footer>
+
+    </main> 
+
+    <!-- SETTINGS & SCROLL LOGIC -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const settingsMenu = document.getElementById('settings-menu');
+        const schemeSelect = document.getElementById('scheme-select');
+        const styleSelect = document.getElementById('style-select');
+        const modeBtns = document.querySelectorAll('.mode-btn');
+
+        // Toggle dropdown menu
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            settingsMenu.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!settingsMenu.contains(e.target) && e.target !== menuBtn) {
+                settingsMenu.classList.add('hidden');
+            }
+        });
+
+        // Color Scheme
+        function setScheme(schemeName) {
+            document.body.setAttribute('data-scheme', schemeName);
+            schemeSelect.value = schemeName;
+            localStorage.setItem('cfg-scheme', schemeName);
+        }
+        schemeSelect.addEventListener('change', (e) => setScheme(e.target.value));
+
+        // Visual Style
+        function setStyle(styleName) {
+            document.body.setAttribute('data-style', styleName);
+            styleSelect.value = styleName;
+            localStorage.setItem('cfg-style', styleName);
+        }
+        styleSelect.addEventListener('change', (e) => setStyle(e.target.value));
+
+        // Theme Mode
+        function setMode(modeName) {
+            localStorage.setItem('cfg-mode', modeName);
+            modeBtns.forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.setMode === modeName);
+            });
+
+            if (modeName === 'system') {
+                const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.body.setAttribute('data-mode', systemPrefersDark ? 'dark' : 'light');
+            } else {
+                document.body.setAttribute('data-mode', modeName);
+            }
+        }
+
+        modeBtns.forEach(btn => {
+            btn.addEventListener('click', () => setMode(btn.dataset.setMode));
+        });
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (localStorage.getItem('cfg-mode') === 'system') {
+                document.body.setAttribute('data-mode', e.matches ? 'dark' : 'light');
+            }
+        });
+
+        // Restore settings
+        setScheme(localStorage.getItem('cfg-scheme') || 'neutral');
+        setStyle(localStorage.getItem('cfg-style') || 'glass');
+        setMode(localStorage.getItem('cfg-mode') || 'system');
+
+        // Scroll spy logic
+        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 110) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight - 50) {
+                current = 'projects';
+            }
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
